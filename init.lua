@@ -3,11 +3,11 @@
 --recipe for sugar blocks--
 
 minetest.register_craft({
-output = 'candy:sugar_block',
+output = "candy:sugar_block",
 recipe = {
-{'mtfoods:sugar' ,'mtfoods:sugar' ,'mtfoods:sugar'}, 
-{'mtfoods:sugar' ,'mtfoods:sugar' ,'mtfoods:sugar'}, 
-{'mtfoods:sugar' ,'mtfoods:sugar' ,'mtfoods:sugar'}
+{"mtfoods:sugar" ,"mtfoods:sugar" ,"mtfoods:sugar"}, 
+{"mtfoods:sugar" ,"mtfoods:sugar" ,"mtfoods:sugar"}, 
+{"mtfoods:sugar" ,"mtfoods:sugar" ,"mtfoods:sugar"}
 }
 })
 
