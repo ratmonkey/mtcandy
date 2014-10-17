@@ -10,6 +10,15 @@ recipe = {
 {'mtfoods:sugar' ,'mtfoods:sugar' ,'mtfoods:sugar'}
 }
 
+--recipe for caramel--
+
+minetest.register_craft({
+type = "cooking",
+output = 'candy:caramel',
+recipe = { 'candy:sugar_block' }
+})
+
+
 
 
 minetest.register_node("candy:sugar_block", {
