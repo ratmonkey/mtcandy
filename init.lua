@@ -12,6 +12,13 @@ recipe = {
 
 
 
+minetest.register_node("candy:sugar_block", {
+	description = "Sugarblock",
+	tiles = {"sugarblock.png"},
+	groups = {cracky=3,oddly_breakable_by_hand=3},
+	sounds = default.node_sound_stone_defaults(),
+})
+
 
 minetest.register_node("candy:crosscandy", {
 	description = "Crosscandy",
