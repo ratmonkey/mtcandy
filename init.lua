@@ -10,6 +10,9 @@ recipe = {
 {'mtfoods:sugar' ,'mtfoods:sugar' ,'mtfoods:sugar'}
 }
 
+
+
+
 minetest.register_node("candy:crosscandy", {
 	description = "Crosscandy",
 	tiles = {"crosscandy.png"},
