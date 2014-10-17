@@ -9,21 +9,30 @@ recipe = {
 {'mtfoods:sugar' ,'mtfoods:sugar' ,'mtfoods:sugar'}, 
 {'mtfoods:sugar' ,'mtfoods:sugar' ,'mtfoods:sugar'}
 }
+})
 
 --recipe for caramel--
 
 minetest.register_craft({
 type = "cooking",
-output = 'candy:caramel',
-recipe = { 'candy:sugar_block' }
+output = "candy:caramel",
+recipe = "candy:sugar_block",
 })
 
-
-
+--register sugar block--
 
 minetest.register_node("candy:sugar_block", {
 	description = "Sugarblock",
-	tiles = {"sugarblock.png"},
+	tiles = {"sugar_block.png"},
+	groups = {cracky=3,oddly_breakable_by_hand=3},
+	sounds = default.node_sound_stone_defaults(),
+})
+
+--register caramel--
+
+minetest.register_node("candy:caramel", {
+	description = "Caramel",
+	tiles = {"caramel.png"},
 	groups = {cracky=3,oddly_breakable_by_hand=3},
 	sounds = default.node_sound_stone_defaults(),
 })
