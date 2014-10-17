@@ -53,13 +53,6 @@ minetest.register_node("candy:dotted_green", {
 	sounds = default.node_sound_stone_defaults(),
 })
 
-minetest.register_node("candy:dotted_green2", {
-	description = "Dotted Green2",
-	tiles = {"dotted_green2.png"},
-	groups = {cracky=3,oddly_breakable_by_hand=3},
-	sounds = default.node_sound_stone_defaults(),
-})
-
 minetest.register_node("candy:dotted_green", {
 	description = "Dotted Green",
 	tiles = {"dotted_green.png"},
