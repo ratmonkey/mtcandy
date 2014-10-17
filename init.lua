@@ -14,30 +14,35 @@ minetest.register_node("candy:crosscandy", {
 	description = "Crosscandy",
 	tiles = {"crosscandy.png"},
 	groups = {cracky=3,oddly_breakable_by_hand=3},
+	sounds = default.node_sound_stone_defaults(),
 })
 
 minetest.register_node("candy:candyrec_bluecyan", {
 	description = "Candyrec Blue",
 	tiles = {"candyrec_bluecyan.png"},
 	groups = {cracky=3,oddly_breakable_by_hand=3},
+	sounds = default.node_sound_stone_defaults(),
 })
 
 minetest.register_node("candy:candyrec_magenta", {
 	description = "Candyrec Magenta",
 	tiles = {"candyrec_magenta.png"},
 	groups = {cracky=3,oddly_breakable_by_hand=3},
+	sounds = default.node_sound_stone_defaults(),
 })
 
 minetest.register_node("candy:candyrec_orange", {
 	description = "Candyrec Orange",
 	tiles = {"candyrec_orange.png"},
 	groups = {cracky=3,oddly_breakable_by_hand=3},
+	sounds = default.node_sound_stone_defaults(),
 })
 
 minetest.register_node("candy:candyrec_yellow", {
 	description = "Candyrec Yellow",
 	tiles = {"candyrec_yellow.png"},
 	groups = {cracky=3,oddly_breakable_by_hand=3},
+	sounds = default.node_sound_stone_defaults(),
 })
 
 
@@ -45,36 +50,42 @@ minetest.register_node("candy:dotted_green", {
 	description = "Dotted Green",
 	tiles = {"dotted_green.png"},
 	groups = {cracky=3,oddly_breakable_by_hand=3},
+	sounds = default.node_sound_stone_defaults(),
 })
 
 minetest.register_node("candy:dotted_green2", {
 	description = "Dotted Green2",
 	tiles = {"dotted_green2.png"},
 	groups = {cracky=3,oddly_breakable_by_hand=3},
+	sounds = default.node_sound_stone_defaults(),
 })
 
 minetest.register_node("candy:dotted_green", {
 	description = "Dotted Green",
 	tiles = {"dotted_green.png"},
 	groups = {cracky=3,oddly_breakable_by_hand=3},
+	sounds = default.node_sound_stone_defaults(),
 })
 
 minetest.register_node("candy:dotted_red", {
 	description = "Dotted Red",
 	tiles = {"dotted_red.png"},
 	groups = {cracky=3,oddly_breakable_by_hand=3},
+	sounds = default.node_sound_stone_defaults(),
 })
 
 minetest.register_node("candy:dotted_pink", {
 	description = "Dotted Pink",
 	tiles = {"dotted_pink.png"},
 	groups = {cracky=3,oddly_breakable_by_hand=3},
+	sounds = default.node_sound_stone_defaults(),
 })
 
 minetest.register_node("candy:dotted_orange", {
 	description = "Dotted Orange",
 	tiles = {"dotted_orange.png"},
 	groups = {cracky=3,oddly_breakable_by_hand=3},
+	sounds = default.node_sound_stone_defaults(),
 })
 
 minetest.register_node("candy:dotted_yellow", {
