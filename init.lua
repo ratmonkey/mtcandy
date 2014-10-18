@@ -250,6 +250,21 @@ minetest.register_node("candy:milk_choco", {
 
 --register special candies--
 
+minetest.register_node("candy:orange", {
+	description = "orange",
+        tiles = {"orange.png"},
+        light_source = 14,
+	groups = {snappy=1,choppy=2,oddly_breakable_by_hand=2,flammable=3},
+})
+
+minetest.register_node("candy:pcorn_side", {
+	description = "Popcorn Bucket",
+        tiles = {"pcorn_top.png", "pcorn_bott.png", "pcorn_side.png"},
+        light_source = 14,
+	groups = {snappy=1,choppy=2,oddly_breakable_by_hand=2,flammable=3},
+})
+
+
 minetest.register_node("candy:heart_candy", {
 	description = "Heart Candy",
 	tiles = {"heart_candy.png"},
