@@ -1,4 +1,6 @@
---= Candy by Ratmonkey
+--Candy by Ratmonkey--
+
+
 
 --recipe for sugar blocks--
 
@@ -37,6 +39,7 @@ minetest.register_node("candy:caramel", {
 	sounds = default.node_sound_stone_defaults(),
 })
 
+--register crosscandy--
 
 minetest.register_node("candy:crosscandy", {
 	description = "Crosscandy",
@@ -44,6 +47,8 @@ minetest.register_node("candy:crosscandy", {
 	groups = {cracky=3,oddly_breakable_by_hand=3},
 	sounds = default.node_sound_stone_defaults(),
 })
+
+--register rectangular candies--
 
 minetest.register_node("candy:candyrec_bluecyan", {
 	description = "Candyrec Blue",
@@ -73,6 +78,8 @@ minetest.register_node("candy:candyrec_yellow", {
 	sounds = default.node_sound_stone_defaults(),
 })
 
+
+--register dotted candies--
 
 minetest.register_node("candy:dotted_green", {
 	description = "Dotted Green",
@@ -116,13 +123,8 @@ minetest.register_node("candy:dotted_yellow", {
 	sounds = default.node_sound_stone_defaults(),
 })
 
-minetest.register_node("candy:heart_candy", {
-	description = "Heart Candy",
-	tiles = {"heart_candy.png"},
-	groups = {cracky=3,oddly_breakable_by_hand=3},
-	sounds = default.node_sound_stone_defaults(),
-})
 
+--register peppermints--
 
 minetest.register_node("candy:peppermint", {
 	description = "Peppermint",
@@ -167,6 +169,9 @@ minetest.register_node("candy:peppermint_yellow_top", {
 	sounds = default.node_sound_stone_defaults(),
 })
 
+
+--register spiral candies--
+
 minetest.register_node("candy:spiral_blue", {
 	description = "Spiral Blue",
 	tiles = {"spiral_blue.png"},
@@ -188,6 +193,8 @@ minetest.register_node("candy:spiral_yellow", {
 	sounds = default.node_sound_stone_defaults(),
 })
 
+
+--register stiped candies--
 
 minetest.register_node("candy:striped_pink_brown", {
 	description = "Striped Pink Brown",
@@ -217,6 +224,14 @@ minetest.register_node("candy:striped_purpple_green", {
 	sounds = default.node_sound_stone_defaults(),
 })
 
+minetest.register_node("candy:striped_lime_green", {
+	description = "Striped Lime Green",
+	tiles = {"striped_lime_green.png"},
+	groups = {cracky=3,oddly_breakable_by_hand=3},
+	sounds = default.node_sound_stone_defaults(),
+})
+
+--register chocolate candies--
 
 minetest.register_node("candy:white_choco", {
 	description = "White Chocolate",
@@ -232,6 +247,15 @@ minetest.register_node("candy:milk_choco", {
 	sounds = default.node_sound_stone_defaults(),
 })
 
+
+--register special candies--
+
+minetest.register_node("candy:heart_candy", {
+	description = "Heart Candy",
+	tiles = {"heart_candy.png"},
+	groups = {cracky=3,oddly_breakable_by_hand=3},
+	sounds = default.node_sound_stone_defaults(),
+})
 minetest.register_node("candy:emenems", {
 	description = "m & m",
 	tiles = {"emenems.png"},
@@ -248,9 +272,4 @@ minetest.register_node("candy:kawaiibun", {
 })
 
 
-minetest.register_node("candy:stripped_test", {
-	description = "Striped test",
-	tiles = {"stripped_test.png"},
-	groups = {cracky=3,oddly_breakable_by_hand=3},
-	sounds = default.node_sound_stone_defaults(),
-})
+
