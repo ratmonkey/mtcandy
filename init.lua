@@ -48,6 +48,18 @@ minetest.register_node("mtcandy:crosscandy", {
 	sounds = default.node_sound_stone_defaults(),
 })
 
+--recipe crosscandy--
+
+minetest.register_craft({
+	output = "mtcandy:crosscandy 2",
+	recipe = {
+		{"dye:magenta", "mtcandy:caramel", "dye:magenta"},
+		{"", "mtcandy:caramel", ""},
+		{"", "", ""},
+	}
+})
+
+
 --register rectangular candies--
 
 minetest.register_node("mtcandy:candyrec_bluecyan", {
