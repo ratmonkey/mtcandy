@@ -368,6 +368,36 @@ minetest.register_node("mtcandy:spiral_yellow", {
 })
 
 
+--recipe spiral candies--
+
+minetest.register_craft({
+	output = "mtcandy:spiral_blue",
+	recipe = {
+		{"dye:cyan", "", "dye:blue"},
+		{"", "mtcandy:caramel", ""},
+		{"", "mtcandy:caramel", ""},
+	}
+})
+
+minetest.register_craft({
+	output = "mtcandy:spiral_purpple",
+	recipe = {
+		{"dye:violet", "", "dye:pink"},
+		{"", "mtcandy:caramel", ""},
+		{"", "mtcandy:caramel", ""},
+	}
+})
+
+minetest.register_craft({
+	output = "mtcandy:spiral_yellow",
+	recipe = {
+		{"dye:yellow", "", "dye:green"},
+		{"", "mtcandy:caramel", ""},
+		{"", "mtcandy:caramel", ""},
+	}
+})
+
+
 --register stiped candies--
 
 minetest.register_node("mtcandy:striped_pink_brown", {
