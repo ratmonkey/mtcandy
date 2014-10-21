@@ -276,6 +276,74 @@ minetest.register_node("mtcandy:peppermint_yellow_top", {
 })
 
 
+--recipe peppermints--
+
+minetest.register_craft({
+	output = "mtcandy:peppermint 3",
+	recipe = {
+		{"", "dye:magenta", ""},
+		{"mtcandy:caramel", "mtcandy:caramel", "mtcandy:caramel"},
+		{"dye:white", "", "dye:white"},
+	}
+})
+
+minetest.register_craft({
+	output = "mtcandy:peppermint_red 3",
+	recipe = {
+		{"", "dye:white", ""},
+		{"mtcandy:caramel", "mtcandy:caramel", "mtcandy:caramel"},
+		{"dye:red", "", "dye:red"},
+	}
+})
+
+minetest.register_craft({
+	output = "mtcandy:peppermint_cyan_top 3",
+	recipe = {
+		{"", "dye:yellow", ""},
+		{"mtcandy:caramel", "mtcandy:caramel", "mtcandy:caramel"},
+		{"dye:cyan", "", "dye:cyan"},
+	}
+})
+
+minetest.register_craft({
+	output = "mtcandy:peppermint_green_top 3",
+	recipe = {
+		{"", "dye:magenta", ""},
+		{"mtcandy:caramel", "mtcandy:caramel", "mtcandy:caramel"},
+		{"dye:green", "", "dye:green"},
+	}
+})
+
+minetest.register_craft({
+	output = "mtcandy:peppermint_magenta_top 3",
+	recipe = {
+		{"", "dye:blue", ""},
+		{"mtcandy:caramel", "mtcandy:caramel", "mtcandy:caramel"},
+		{"dye:magenta", "", "dye:magenta"},
+	}
+})
+
+minetest.register_craft({
+	output = "mtcandy:peppermint_orange_top 3",
+	recipe = {
+		{"", "dye:violet", ""},
+		{"mtcandy:caramel", "mtcandy:caramel", "mtcandy:caramel"},
+		{"dye:orange", "", "dye:orange"},
+	}
+})
+
+minetest.register_craft({
+	output = "mtcandy:peppermint_yellow_top 3",
+	recipe = {
+		{"", "dye:magenta", ""},
+		{"mtcandy:caramel", "mtcandy:caramel", "mtcandy:caramel"},
+		{"dye:yellow", "", "dye:yellow"},
+	}
+})
+
+
+
+
 --register spiral candies--
 
 minetest.register_node("mtcandy:spiral_blue", {
