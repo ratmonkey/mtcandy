@@ -268,6 +268,13 @@ minetest.register_node("mtcandy:peppermint_orange_top", {
 	sounds = default.node_sound_stone_defaults(),
 })
 
+minetest.register_node("mtcandy:peppermint_yellow_top", {
+	description = "Peppermint Yellow",
+	tiles = {"mtcandy_peppermint_yellow_top.png", "mtcandy_peppermint_yellow_bott.png", "mtcandy_peppermint_yellow_side.png"},
+	groups = {cracky=3,oddly_breakable_by_hand=3},
+	sounds = default.node_sound_stone_defaults(),
+})
+
 
 --register spiral candies--
 
