@@ -78,6 +78,45 @@ minetest.register_node("mtcandy:candyrec_yellow", {
 	sounds = default.node_sound_stone_defaults(),
 })
 
+--recipe rectangular candies--
+
+minetest.register_craft({
+	output = "mtcandy:candyrec_bluecyan 2",
+	recipe = {
+		{"mtcandy:caramel", "dye:cyan", ""},
+		{"dye:blue", "mtcandy:caramel", ""},
+		{"", "", ""},
+	}
+})
+
+minetest.register_craft({
+	output = "mtcandy:candyrec_magenta 2",
+	recipe = {
+		{"mtcandy:caramel", "dye:magenta", ""},
+		{"dye:red", "mtcandy:caramel", ""},
+		{"", "", ""},
+	}
+})
+
+minetest.register_craft({
+	output = "mtcandy:candyrec_orange 2",
+	recipe = {
+		{"mtcandy:caramel", "dye:orange", ""},
+		{"dye:red", "mtcandy:caramel", ""},
+		{"", "", ""},
+	}
+})
+
+minetest.register_craft({
+	output = "mtcandy:candyrec_yellow 2",
+	recipe = {
+		{"mtcandy:caramel", "dye:yellow", ""},
+		{"dye:white", "mtcandy:caramel", ""},
+		{"", "", ""},
+	}
+})
+
+
 
 --register dotted candies--
 
