@@ -276,6 +276,55 @@ minetest.register_node("mtcandy:peppermint_yellow_top", {
 })
 
 
+--recipe stipped candies--
+
+minetest.register_craft({
+	output = "mtcandy:striped_pink_brown 3",
+	recipe = {
+		{"dye:brown", "dye:pink", "dye:brown"},
+		{"mtcandy:caramel", "mtcandy:caramel", "mtcandy:caramel"},
+		{"", "", ""},
+	}
+})
+
+minetest.register_craft({
+	output = "mtcandy:striped_pink_white 3",
+	recipe = {
+		{"dye:white", "dye:pink", "dye:white"},
+		{"mtcandy:caramel", "mtcandy:caramel", "mtcandy:caramel"},
+		{"", "", ""},
+	}
+})
+
+minetest.register_craft({
+	output = "mtcandy:striped_pink_yellow 3",
+	recipe = {
+		{"dye:yellow", "dye:pink", "dye:yellow"},
+		{"mtcandy:caramel", "mtcandy:caramel", "mtcandy:caramel"},
+		{"", "", ""},
+	}
+})
+
+minetest.register_craft({
+	output = "mtcandy:striped_purpple_green 3",
+	recipe = {
+		{"dye:cyan", "dye:green", "dye:cyan"},
+		{"mtcandy:caramel", "mtcandy:caramel", "mtcandy:caramel"},
+		{"", "", ""},
+	}
+})
+
+minetest.register_craft({
+	output = "mtcandy:striped_lime_green 3",
+	recipe = {
+		{"dye:green", "dye:white", "dye:green"},
+		{"mtcandy:caramel", "mtcandy:caramel", "mtcandy:caramel"},
+		{"", "", ""},
+	}
+})
+
+
+
 --recipe peppermints--
 
 minetest.register_craft({
