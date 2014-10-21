@@ -541,14 +541,3 @@ minetest.register_node("mtcandy:emenems", {
 	groups = {cracky=3,oddly_breakable_by_hand=3},
 	sounds = default.node_sound_stone_defaults(),
 })
-
-minetest.register_node("mtcandy:kawaiibun", {
-	description = "kawaii Bunny",
-	tiles = {"mtcandy_kawaiibun.png"},
-	light_source = 10,
-	groups = {cracky=3,oddly_breakable_by_hand=3},
-	sounds = default.node_sound_stone_defaults(),
-})
-
-
-
