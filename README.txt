@@ -7,3 +7,4 @@ This is a mod for Minetest that will add fluff, color and diabetes in players li
 ~*~*~*~*~*~*~*~
 Rename the folder to mtcandy.
 ~*~*~*~*~*~*~*~
+Dependencies: [mtfoods](https://github.com/Philipbenr/mtfoods)
