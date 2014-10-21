@@ -175,6 +175,54 @@ minetest.register_node("mtcandy:dotted_yellow", {
 })
 
 
+--recipe dotted candies--
+
+minetest.register_craft({
+	output = "mtcandy:dotted_green 2",
+	recipe = {
+		{"", "dye:white", ""},
+		{"mtcandy:caramel", "", "mtcandy:caramel"},
+		{"", "dye:green", ""},
+	}
+})
+
+minetest.register_craft({
+	output = "mtcandy:dotted_red 2",
+	recipe = {
+		{"", "dye:white", ""},
+		{"mtcandy:caramel", "", "mtcandy:caramel"},
+		{"", "dye:red", ""},
+	}
+})
+
+minetest.register_craft({
+	output = "mtcandy:dotted_pink 2",
+	recipe = {
+		{"", "dye:white", ""},
+		{"mtcandy:caramel", "", "mtcandy:caramel"},
+		{"", "dye:pink", ""},
+	}
+})
+
+minetest.register_craft({
+	output = "mtcandy:dotted_orange 2",
+	recipe = {
+		{"", "dye:white", ""},
+		{"mtcandy:caramel", "", "mtcandy:caramel"},
+		{"", "dye:orange", ""},
+	}
+})
+
+minetest.register_craft({
+	output = "mtcandy:dotted_yellow 2",
+	recipe = {
+		{"", "dye:white", ""},
+		{"mtcandy:caramel", "", "mtcandy:caramel"},
+		{"", "dye:yellow", ""},
+	}
+})
+
+
 --register peppermints--
 
 minetest.register_node("mtcandy:peppermint", {
