@@ -564,3 +564,53 @@ minetest.register_node("mtcandy:emenems", {
 	groups = {cracky=3,oddly_breakable_by_hand=3},
 	sounds = default.node_sound_stone_defaults(),
 })
+
+
+--recipes for special candies--
+
+minetest.register_craft({
+	output = "mtcandy:orange 3",
+	recipe = {
+		{"mtcandy:caramel", "default:torch", "dye:orange"},
+		{"dye:yellow", "default:torch", "mtcandy:caramel"},
+		{"mtcandy:caramel", "default:torch", "dye:orange"},
+	}
+})
+
+minetest.register_craft({
+	output = "mtcandy:pcorn_side 3",
+	recipe = {
+		{"mtcandy:caramel", "default:torch", "dye:red"},
+		{"dye:yellow", "default:torch", "mtcandy:caramel"},
+		{"mtcandy:caramel", "default:torch", "dye:white"},
+	}
+})
+
+minetest.register_craft({
+	output = "mtcandy:daisy 3",
+	recipe = {
+		{"mtcandy:caramel", "default:torch", "dye:yellow"},
+		{"dye:violet", "default:torch", "mtcandy:caramel"},
+		{"mtcandy:caramel", "default:torch", "dye:white"},
+	}
+})
+
+minetest.register_craft({
+	output = "mtcandy:heart_candy 3",
+	recipe = {
+		{"mtcandy:caramel", "default:torch", "dye:red"},
+		{"dye:yellow", "default:torch", "mtcandy:caramel"},
+		{"mtcandy:caramel", "default:torch", "dye:orange"},
+	}
+})
+
+minetest.register_craft({
+	output = "mtcandy:emenems 3",
+	recipe = {
+		{"mtcandy:caramel", "default:torch", "dye:yellow"},
+		{"dye:brown", "default:torch", "mtcandy:caramel"},
+		{"mtcandy:caramel", "default:torch", "dye:magenta"},
+	}
+})
+
+
