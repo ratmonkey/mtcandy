@@ -1,8 +1,20 @@
 --Candy by Ratmonkey--
 
 
+------------------------
+--register sugar block--
+------------------------
 
---recipe for sugar blocks--
+minetest.register_node("mtcandy:sugar_block", {
+	description = "Sugarblock",
+	tiles = {"mtcandy_sugar_block.png"},
+	groups = {cracky=3,oddly_breakable_by_hand=3},
+	sounds = default.node_sound_stone_defaults(),
+})
+
+--------------------------
+--recipe for sugar block--
+--------------------------
 
 minetest.register_craft({
 output = "mtcandy:sugar_block",
@@ -13,24 +25,10 @@ recipe = {
 }
 })
 
---recipe for caramel--
 
-minetest.register_craft({
-type = "cooking",
-output = "mtcandy:caramel",
-recipe = "mtcandy:sugar_block",
-})
-
---register sugar block--
-
-minetest.register_node("mtcandy:sugar_block", {
-	description = "Sugarblock",
-	tiles = {"mtcandy_sugar_block.png"},
-	groups = {cracky=3,oddly_breakable_by_hand=3},
-	sounds = default.node_sound_stone_defaults(),
-})
-
+--------------------
 --register caramel--
+--------------------
 
 minetest.register_node("mtcandy:caramel", {
 	description = "Caramel",
@@ -39,7 +37,20 @@ minetest.register_node("mtcandy:caramel", {
 	sounds = default.node_sound_stone_defaults(),
 })
 
+----------------------
+--recipe for caramel--
+----------------------
+
+minetest.register_craft({
+type = "cooking",
+output = "mtcandy:caramel",
+recipe = "mtcandy:sugar_block",
+})
+
+
+-----------------------
 --register crosscandy--
+-----------------------
 
 minetest.register_node("mtcandy:crosscandy", {
 	description = "Crosscandy",
@@ -48,7 +59,9 @@ minetest.register_node("mtcandy:crosscandy", {
 	sounds = default.node_sound_stone_defaults(),
 })
 
---recipe crosscandy--
+-------------------------
+--recipe for crosscandy--
+-------------------------
 
 minetest.register_craft({
 	output = "mtcandy:crosscandy 2",
@@ -60,7 +73,10 @@ minetest.register_craft({
 })
 
 
+--------------------------------
 --register rectangular candies--
+--------------------------------
+
 
 minetest.register_node("mtcandy:candyrec_bluecyan", {
 	description = "Candyrec Blue",
@@ -90,7 +106,11 @@ minetest.register_node("mtcandy:candyrec_yellow", {
 	sounds = default.node_sound_stone_defaults(),
 })
 
---recipe rectangular candies--
+
+
+----------------------------------
+--recipe for rectangular candies--
+----------------------------------
 
 minetest.register_craft({
 	output = "mtcandy:candyrec_bluecyan 2",
@@ -129,8 +149,9 @@ minetest.register_craft({
 })
 
 
-
+---------------------------
 --register dotted candies--
+---------------------------
 
 minetest.register_node("mtcandy:dotted_green", {
 	description = "Dotted Green",
@@ -175,7 +196,9 @@ minetest.register_node("mtcandy:dotted_yellow", {
 })
 
 
---recipe dotted candies--
+-----------------------------
+--recipe for dotted candies--
+-----------------------------
 
 minetest.register_craft({
 	output = "mtcandy:dotted_green 2",
@@ -223,7 +246,9 @@ minetest.register_craft({
 })
 
 
+------------------------
 --register peppermints--
+------------------------
 
 minetest.register_node("mtcandy:peppermint", {
 	description = "Peppermint",
@@ -276,7 +301,9 @@ minetest.register_node("mtcandy:peppermint_yellow_top", {
 })
 
 
---recipe peppermints--
+--------------------------
+--recipe for peppermints--
+--------------------------
 
 minetest.register_craft({
 	output = "mtcandy:peppermint 3",
@@ -342,9 +369,9 @@ minetest.register_craft({
 })
 
 
-
-
+---------------------------
 --register spiral candies--
+---------------------------
 
 minetest.register_node("mtcandy:spiral_blue", {
 	description = "Spiral Blue",
@@ -368,19 +395,21 @@ minetest.register_node("mtcandy:spiral_yellow", {
 })
 
 
---recipe spiral candies--
+-----------------------------
+--recipe for spiral candies--
+-----------------------------
 
 minetest.register_craft({
 	output = "mtcandy:spiral_blue",
 	recipe = {
-		{"dye:cyan", "", "dye:blue"},
+		{"dye:cyan", "", "dye:blue 2"},
 		{"", "mtcandy:caramel", ""},
 		{"", "mtcandy:caramel", ""},
 	}
 })
 
 minetest.register_craft({
-	output = "mtcandy:spiral_purpple",
+	output = "mtcandy:spiral_purpple 2",
 	recipe = {
 		{"dye:violet", "", "dye:pink"},
 		{"", "mtcandy:caramel", ""},
@@ -389,7 +418,7 @@ minetest.register_craft({
 })
 
 minetest.register_craft({
-	output = "mtcandy:spiral_yellow",
+	output = "mtcandy:spiral_yellow 2",
 	recipe = {
 		{"dye:yellow", "", "dye:green"},
 		{"", "mtcandy:caramel", ""},
@@ -398,7 +427,9 @@ minetest.register_craft({
 })
 
 
+---------------------------
 --register stiped candies--
+---------------------------
 
 minetest.register_node("mtcandy:striped_pink_brown", {
 	description = "Striped Pink Brown",
@@ -436,7 +467,9 @@ minetest.register_node("mtcandy:striped_lime_green", {
 })
 
 
---recipe stipped candies--
+-----------------------------
+--recipe for stiped candies--
+-----------------------------
 
 minetest.register_craft({
 	output = "mtcandy:striped_pink_brown 3",
@@ -484,8 +517,9 @@ minetest.register_craft({
 })
 
 
-
+------------------------------
 --register chocolate candies--
+------------------------------
 
 minetest.register_node("mtcandy:milk_choco", {
 	description = "Milk Chocolate",
@@ -502,7 +536,9 @@ minetest.register_node("mtcandy:white_choco", {
 })
 
 
+--------------------------------
 --recipe for chocolate candies--
+--------------------------------
 
 minetest.register_craft({
 	output = "mtcandy:milk_choco 2",
@@ -523,8 +559,9 @@ minetest.register_craft({
 })
 
 
-
+----------------------------
 --register special candies--
+----------------------------
 
 minetest.register_node("mtcandy:orange", {
 	description = "orange",
@@ -566,7 +603,9 @@ minetest.register_node("mtcandy:emenems", {
 })
 
 
+-------------------------------
 --recipes for special candies--
+-------------------------------
 
 minetest.register_craft({
 	output = "mtcandy:orange 3",
@@ -612,5 +651,4 @@ minetest.register_craft({
 		{"mtcandy:caramel", "default:torch", "dye:magenta"},
 	}
 })
-
 
