@@ -18,11 +18,11 @@ minetest.register_node("mtcandy:sugar_block", {
 
 minetest.register_craft({
 output = "mtcandy:sugar_block",
-recipe = {
-{"mtfoods:sugar" ,"mtfoods:sugar" ,"mtfoods:sugar"}, 
-{"mtfoods:sugar" ,"mtfoods:sugar" ,"mtfoods:sugar"}, 
-{"mtfoods:sugar" ,"mtfoods:sugar" ,"mtfoods:sugar"}
-}
+	recipe = {
+		{"mtfoods:sugar" ,"mtfoods:sugar" ,"mtfoods:sugar"}, 
+		{"mtfoods:sugar" ,"mtfoods:sugar" ,"mtfoods:sugar"}, 
+		{"mtfoods:sugar" ,"mtfoods:sugar" ,"mtfoods:sugar"}
+	}
 })
 
 
@@ -42,9 +42,9 @@ minetest.register_node("mtcandy:caramel", {
 ----------------------
 
 minetest.register_craft({
-type = "cooking",
-output = "mtcandy:caramel",
-recipe = "mtcandy:sugar_block",
+	type = "cooking",
+	output = "mtcandy:caramel",
+	recipe = "mtcandy:sugar_block",
 })
 
 
@@ -565,24 +565,24 @@ minetest.register_craft({
 
 minetest.register_node("mtcandy:orange", {
 	description = "orange",
-        tiles = {"mtcandy_orange.png"},
-        light_source = 10,
+	tiles = {"mtcandy_orange.png"},
+	light_source = 10,
 	groups = {snappy=1,choppy=2,oddly_breakable_by_hand=2,flammable=3},
 	sounds = default.node_sound_stone_defaults(),
 })
 
 minetest.register_node("mtcandy:pcorn_side", {
 	description = "Popcorn Bucket",
-        tiles = {"mtcandy_pcorn_top.png", "mtcandy_pcorn_bott.png", "mtcandy_pcorn_side.png"},
-        light_source = 10,
+	tiles = {"mtcandy_pcorn_top.png", "mtcandy_pcorn_bott.png", "mtcandy_pcorn_side.png"},
+	light_source = 10,
 	groups = {snappy=1,choppy=2,oddly_breakable_by_hand=2,flammable=3},
 	sounds = default.node_sound_stone_defaults(),
 })
 
 minetest.register_node("mtcandy:daisy", {
 	description = "daisy",
-        tiles = {"mtcandy_daisy.png"},
-        light_source = 10,
+	tiles = {"mtcandy_daisy.png"},
+	light_source = 10,
 	groups = {snappy=1,choppy=2,oddly_breakable_by_hand=2,flammable=3},
 	sounds = default.node_sound_stone_defaults(),
 })
