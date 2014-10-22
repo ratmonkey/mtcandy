@@ -380,9 +380,9 @@ minetest.register_node("mtcandy:spiral_blue", {
 	sounds = default.node_sound_stone_defaults(),
 })
 
-minetest.register_node("mtcandy:spiral_purpple", {
-	description = "Spiral Purpple",
-	tiles = {"mtcandy_spiral_purpple.png"},
+minetest.register_node("mtcandy:spiral_purple", {
+	description = "Spiral Purple",
+	tiles = {"mtcandy_spiral_purple.png"},
 	groups = {cracky=3,oddly_breakable_by_hand=3},
 	sounds = default.node_sound_stone_defaults(),
 })
@@ -409,7 +409,7 @@ minetest.register_craft({
 })
 
 minetest.register_craft({
-	output = "mtcandy:spiral_purpple 2",
+	output = "mtcandy:spiral_purple 2",
 	recipe = {
 		{"dye:violet", "", "dye:pink"},
 		{"", "mtcandy:caramel", ""},
@@ -452,9 +452,9 @@ minetest.register_node("mtcandy:striped_pink_yellow", {
 	sounds = default.node_sound_stone_defaults(),
 })
 
-minetest.register_node("mtcandy:striped_purpple_green", {
-	description = "Striped Purpple Green",
-	tiles = {"mtcandy_striped_purpple_green.png"},
+minetest.register_node("mtcandy:striped_purple_green", {
+	description = "Striped Purple Green",
+	tiles = {"mtcandy_striped_purple_green.png"},
 	groups = {cracky=3,oddly_breakable_by_hand=3},
 	sounds = default.node_sound_stone_defaults(),
 })
@@ -499,7 +499,7 @@ minetest.register_craft({
 })
 
 minetest.register_craft({
-	output = "mtcandy:striped_purpple_green 3",
+	output = "mtcandy:striped_purple_green 3",
 	recipe = {
 		{"dye:cyan", "dye:green", "dye:cyan"},
 		{"mtcandy:caramel", "mtcandy:caramel", "mtcandy:caramel"},
@@ -652,3 +652,28 @@ minetest.register_craft({
 	}
 })
 
+-- won't work with upstream moreblocks
+if core.get_modpath( 'moreblocks' ) ~= nil and stairsplus.register_nodes then
+	local nodes = {
+		'candyrec_bluecyan',
+		'candyrec_magenta',
+		'candyrec_orange',
+		'candyrec_yellow',
+		'dotted_green',
+		'dotted_orange',
+		'dotted_pink',
+		'dotted_red',
+		'dotted_yellow',
+		'striped_lime_green',
+		'striped_purple_green',
+		'striped_pink_yellow',
+		'striped_pink_white',
+		'striped_pink_brown',
+		'milk_choco',
+		'white_choco',
+		'crosscandy',
+		'daisy',
+		'orange'
+	}
+	stairsplus.register_nodes ( 'mtcandy', nodes )
+end
